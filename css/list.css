@@ -1,0 +1,307 @@
+/*产品列表页*/
+.list_tit{
+	color: #444;
+    font-size: 16px;
+    border-bottom: solid 1px #d6d6d6;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.cp_c li{
+	display:inline-block;
+	vertical-align: top;
+	width: 202px;
+    height: 150px;
+	text-align: center;
+	margin: 0 10px 10px 0;
+}
+.cp_c a{
+	color: #444;
+    text-decoration: none;
+}
+.cp_c li:nth-child(3n+3) {
+    margin-right: 0;
+}
+.cp_c img{
+	width: 202px;
+    height: 124px;
+    transition: all 1s;
+}
+.cp_c li a img:hover{
+	transform: scale(1.4); 
+}
+/*
+ * 
+ @-webkit-keyframes cp_c{
+    0%{
+        -webkit-transform:rotate(0deg) scale(1);/*旋转0度；放大1倍
+        -moz-transform:rotate(0deg) scale(1);
+        -ms-transform:rotate(0deg) scale(1);
+        -o-transform:rotate(0deg) scale(1);
+        transform:rotate(0deg) scale(1);
+        opacity: 0.5;/*透明性
+        border-radius: 1px;/*实现圆角边框的效果
+
+    }
+    40%{
+        -webkit-transform:rotate(60deg) scale(2);
+        -moz-transform:rotate(60deg) scale(2);
+        -ms-transform:rotate(60deg) scale(2);
+        -o-transform:rotate(60deg) scale(2);
+       transform:rotate(60deg) scale(2);
+        opacity: 0.9;
+    }
+    60%{
+        -webkit-transform:rotate(30deg) scale(1.3);
+        -moz-transform:rotate(30deg) scale(1.3);
+        -ms-transform:rotate(30deg) scale(1.3);
+        -o-transform:rotate(30deg) scale(1.3);
+       transform:rotate(30deg) scale(1.3);
+        opacity: 0.2;
+        border-radius: 110px;
+    }
+    90%{
+        -webkit-transform:rotate(0deg) scale(0.8);
+        -moz-transform:rotate(0deg) scale(0.8);
+        -ms-transform:rotate(0deg) scale(0.8);
+        -o-transform:rotate(0deg) scale(0.8);
+       transform:rotate(0deg) scale(0.8);
+        opacity: 1;
+        border-radius: 11px;
+    }
+}
+@-moz-keyframes cp_c{
+    0%{
+        -moz-transform:rotate(0deg) scale(1);
+        transform:rotate(0deg) scale(1);
+        opacity: 0.5;
+        border-radius: 1px;
+
+    }
+    40%{
+        -moz-transform:rotate(60deg) scale(2);
+        transform:rotate(60deg) scale(2);
+        opacity: 0.9;
+    }
+    60%{
+        -moz-transform:rotate(30deg) scale(1.3);
+        transform:rotate(30deg) scale(1.3);
+        opacity: 0.2;
+        border-radius: 110px;
+    }
+    90%{
+        -moz-transform:rotate(0deg) scale(0.8);
+        transform:rotate(0deg) scale(0.8);
+        opacity: 1;
+        border-radius: 11px;
+    }
+}
+@-ms-keyframes cp_c{
+    0%{
+        -ms-transform:rotate(0deg) scale(1);
+        transform:rotate(0deg) scale(1);
+        opacity: 0.5;
+        border-radius: 1px;
+
+    }
+    40%{
+        -ms-transform:rotate(60deg) scale(2);
+        transform:rotate(60deg) scale(2);
+        opacity: 0.9;
+    }
+    60%{
+        -ms-transform:rotate(30deg) scale(1.3);
+        transform:rotate(30deg) scale(1.3);
+        opacity: 0.2;
+        border-radius: 110px;
+    }
+    90%{
+        -ms-transform:rotate(0deg) scale(0.8);
+        transform:rotate(0deg) scale(0.8);
+        opacity: 1;
+        border-radius: 11px;
+    }
+}
+@-o-keyframes cp_c{
+    0%{
+        -o-transform:rotate(0deg) scale(1);
+        transform:rotate(0deg) scale(1);
+        opacity: 0.5;
+        border-radius: 1px;
+
+    }
+    40%{
+        -o-transform:rotate(60deg) scale(2);
+        transform:rotate(60deg) scale(2);
+        opacity: 0.9;
+    }
+    60%{
+        -o--transform:rotate(30deg) scale(1.3);
+        transform:rotate(30deg) scale(1.3);
+        opacity: 0.2;
+        border-radius: 110px;
+    }
+    90%{
+        -o--transform:rotate(0deg) scale(0.8);
+        transform:rotate(0deg) scale(0.8);
+        opacity: 1;
+        border-radius: 11px;
+    }
+}
+.cp_c li:hover img{
+    -webkit-animation-name:cp_c;
+    -moz-animation-name:cp_c;
+    -ms-animation-name:cp_c;
+    -o-animation-name:cp_c;
+    animation-name:cp_c;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    -ms-animation-duration:1s;
+    -o-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -moz-animation-timing-function:linear;
+    -ms-animation-timing-function:linear;
+    -o-animation-timing-function:linear;
+    animation-timing-function:linear;
+}*/
+/*页码*/
+.list_nav{
+	margin-top:10px;
+}
+.list_nav li{
+	display:inline-block;
+	vertical-align: top;
+	background-color: #3589db;
+    padding: 3px 10px;
+    margin-right: 10px;
+}
+.list_nav a {
+    text-decoration: none;
+    color: #fff;
+}
+.list_nav li.on,.list_nav li:hover{
+    background-color: #A39F9F;
+}
+/*推荐*/
+.tj_tit{
+	color: #444;
+    font-size: 16px;
+    border-bottom: solid 1px #9D9D9D;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.tj_c{
+	width:100%;
+	display:inline-block;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+.tj_c li:before{   /*插入计数器计数*/
+	content:counter(xuhao);
+	background-color: #3598dc;
+    color: white;
+    padding: 2px 5px;
+    margin-right: 5px;
+}
+.tj_c li{
+	counter-increment: xuhao;
+	display:inline-block;
+	width:100%;
+	vertical-align: bottom;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	margin-top: 15px;
+	-webkit-transition: text-shadow 1s linear;/*不同浏览器兼容性*/ 
+    -moz-transition: text-shadow 1s linear;
+    -ms-transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    transition: text-shadow 1s linear;/*动画效果*/
+}
+.tj_c li:hover{
+	text-shadow:1px 4px 9px #000;/*阴影效果*/
+}
+.tj_c li:first-child:before,.tj_c li:nth-child(2):before,.tj_c li:nth-child(3):before{/*选择数字更改*/
+	background-color: #444;
+}
+.tj_c li:last-child:before{
+	font-size:14px;
+	padding: 2px 2px;
+}
+.tj_c a{
+	color:#444444;
+	text-decoration: none;
+}
+/*新闻列表页*/
+.new_c li{
+	display:inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	color: #444;
+	-webkit-transition: text-shadow 1s linear;/*不同浏览器兼容性*/ 
+    -moz-transition: text-shadow 1s linear;
+    -ms-transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    transition: text-shadow 1s linear;/*动画效果*/
+}
+.new_c li:hover{
+	text-shadow:1px 4px 9px #000;/*阴影效果*/
+}
+.new_c a{
+	color: #444;
+    text-decoration: none;
+    margin-right: 283px;
+}
+.new_c li:nth-child(5n+5) {
+    border-bottom: solid 1px #d6d6d6;
+    padding-bottom: 10px;
+}
+/*内容页面*/
+.content_c_tit h3{
+    font-weight: normal;
+    margin: 20px 0;
+}
+.title_bar,.bdsharebuttonbox.bdshare-button-style0-16 {   /*分享链接*/
+    display: inline-block;
+    vertical-align: bottom;
+}
+.title_bar,.bdsharebuttonbox.bdshare-button-style0-16 a{
+    border: 0;
+    padding-right: 0px;
+}
+.title_bar{
+    font-size: 10px;
+    font-family: "宋体";
+    color: #808080;
+    border-bottom: solid 1px #CAC7C7;
+    padding-bottom: 2px;
+    line-height: 28px;
+}
+.title_bar a{
+    color: #3598DB;
+    border-right: solid 1px #CAC7C7;
+    padding-right: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.title_bar time{
+    margin-right: 20px;
+}
+.content_c_nr{
+    color: #444;
+    padding: 20px 0;
+    text-indent: 34px;
+    line-height: 30px;
+}
+.xiangguanyuedu{
+    margin-top: 20px;
+    height: 38px;
+    overflow: hidden;
+}
+.xiangguanyuedu a{
+    text-decoration: none;
+    color: #3598DB;
+}
+.xiangguanyuedu a{
+    margin-right: 10px;
+}
